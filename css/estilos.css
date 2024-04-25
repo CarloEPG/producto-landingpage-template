@@ -1,0 +1,376 @@
+:root{
+  --btn-default:#28a15d;
+  --btn-hover:#1a8149;
+  --btn-active:#15673d;
+
+
+  --1:#41B06E; /*- 65, 176, 110 -*/
+  --2:#41B06E;
+  --3:#E8DFCA;
+  --4:#F5EFE6;
+
+
+  --5:#eefbf2;
+  --6:#082618; /*- 8, 38, 24 -*/
+}
+
+body{
+font-family: "DM Sans", sans-serif;
+}
+
+section {
+  padding: 6rem 0;
+}
+
+/*--------------------------------------------------------------
+# hero
+--------------------------------------------------------------*/
+
+.hero h1, .hero h2 {
+  font-family: "Jersey 20", sans-serif;
+  color: #fff;
+}
+
+.hero {
+width: 100%;
+  height: 110vh;
+  background: linear-gradient(to right, rgba(65, 176, 110, 0.8) 0%, rgba(141, 236, 180, 0.8) 100%), url(../img/connection-4348764_1920.png);
+  background-repeat: no-repeat;
+  position: relative;
+
+}
+
+.hero h1 {
+  margin: 0 0 15px 0;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+}
+
+.hero h2 {
+  margin-bottom: 30px;
+  font-size: 22px;
+}
+
+@media (max-width: 991px) {
+  .hero .hero-img {
+    text-align: center;
+  }
+
+  .hero .hero-img img {
+    width: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    -moz-text-align-last: center;
+    text-align-last: center;
+  }
+
+  .hero h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .hero h2 {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
+
+  .hero .hero-img img {
+    width: 70%;
+  }
+}
+
+@media (max-width: 575px) {
+  .hero .hero-img img {
+    width: 80%;
+  }
+}
+
+.hero .wave {
+  width: 100%;
+  overflow: hidden;
+  position: absolute;
+  bottom: -150px;
+}
+
+@media screen and (max-width: 992px) {
+  .hero .wave {
+    bottom: -180px;
+  }
+}
+
+.hero .wave svg {
+  width: 100%;
+}
+
+/*--------------------------------------------------------------
+# lista
+--------------------------------------------------------------*/
+.lista .img-noti {
+  background:  url(../img/Green_dots.svg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.lista .conte h3 {
+  font-size: 18px;
+  margin: 0;
+  font-weight: 700;
+  color: var(--1);
+}
+
+.lista .conte i {
+  font-size: 22px;
+  line-height: 0;
+  margin-right: 8px;
+  color: var(--1);
+}
+/*--------------------------------------------------------------
+# sub
+--------------------------------------------------------------*/
+.sub {
+  padding: 3rem 0;
+  background: linear-gradient(to right, rgba(65, 176, 110, 0.8) 0%, rgba(141, 236, 180, 0.8) 100%);
+}
+
+.sub h2 {
+  color: #fff;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 768px) {
+  .sub h2 {
+    font-size: 2rem;
+  }
+}
+
+.sub form {
+  margin-top: 30px;
+  background: #fff;
+  padding: 5px 10px;
+  position: relative;
+  border-radius: 4px;
+  text-align: left;
+}
+
+.sub form input[type=email] {
+  border: 0;
+  padding: 4px 8px;
+  width: calc(100% - 100px);
+}
+
+.sub form input[type=submit] {
+  position: absolute;
+  top: 0;
+  right: -1px;
+  bottom: 0;
+  border: 0;
+  background: none;
+  font-size: 16px;
+  padding: 0 20px;
+  background: var(--btn-default);
+  color: #fff;
+  transition: 0.3s;
+  border-radius: 0 4px 4px 0;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.sub form input[type=submit]:hover {
+  background: var(--btn-hover);
+}
+
+
+
+/*--------------------------------------------------------------
+# use
+--------------------------------------------------------------*/
+
+.use .present {
+  font-size: 3rem;
+  font-weight: 700;
+  background: linear-gradient(to right, rgba(65, 176, 110, 0.8) 0%, rgba(141, 236, 180, 0.8) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.use .nume .div-ico {
+  margin: 0 auto;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  position: relative;
+  margin-bottom: 30px;
+  box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.2);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.use .nume .div-ico {
+  background: linear-gradient(to right, rgba(65, 176, 110, 0.8) 0%, rgba(141, 236, 180, 0.8) 100%);
+}
+
+.use .nume .div-ico i {
+  font-size: 40px;
+  line-height: 0;
+  color: #fff;
+}
+
+.use .nume h3 {
+  font-size: 20px;
+}
+
+.use .nume p {
+  color: #b1b1b1;
+}
+
+/*--------------------------------------------------------------
+# feedback
+--------------------------------------------------------------*/
+.feedback{
+  background: var(--5);
+}
+
+.feedback .present{
+  font-size: 3rem;
+  font-weight: 700;
+  background: linear-gradient(to right, rgba(65, 176, 110, 0.8) 0%, rgba(141, 236, 180, 0.8) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+.feedback .email-form {
+  width: 100%;
+  margin-top: 30px;
+  background: #fff;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.08);
+}
+
+.feedback .email-form .form-group {
+  padding-bottom: 20px;
+}
+
+.feedback .email-form textarea{
+  height: 50%;
+    width: 100%;
+    resize: none;
+}
+
+.feedback .email-form input,
+.feedback .email-form textarea {
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 14px;
+}
+
+.feedback .email-form input:focus,
+.feedback .email-form textarea:focus {
+  border-color: var(--color-primary);
+}
+
+.feedback .email-form input {
+  height: 48px;
+}
+
+.feedback .email-form textarea {
+  padding: 10px 12px;
+}
+
+.feedback .email-form button[type=submit] {
+  background: var(--btn-default);
+  border: 0;
+  padding: 12px 40px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 50px;
+}
+
+.feedback .email-form button[type=submit]:hover {
+  background: var(--btn-hover);
+}
+
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+.footer {
+  color: #b4aca8;
+  font-size: 14px;
+  background: var(--6);
+}
+
+
+
+.footer .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: var(--btn-default);
+  color: #fff;
+  line-height: 1;
+  padding: 8px 0;
+  margin-right: 4px;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+}
+
+.footer .social-links a:hover {
+  background: var(--btn-hover);
+  color: #fff;
+  text-decoration: none;
+}
+
+
+/*--------------------------------------------------------------
+# Preloader
+--------------------------------------------------------------*/
+
+#preloader {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  overflow: hidden;
+  background: var(--5);
+  transition: all 0.6s ease-out;
+  width: 100%;
+  height: 100vh;
+}
+
+#preloader:before,
+#preloader:after {
+  content: "";
+  position: absolute;
+  border: 4px solid var(--1);
+  border-radius: 50%;
+  animation: animate-preloader 2s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+
+#preloader:after {
+  animation-delay: -0.5s;
+}
+
+@keyframes animate-preloader {
+  0% {
+    width: 10px;
+    height: 10px;
+    top: calc(50% - 5px);
+    left: calc(50% - 5px);
+    opacity: 1;
+  }
+
+  100% {
+    width: 72px;
+    height: 72px;
+    top: calc(50% - 36px);
+    left: calc(50% - 36px);
+    opacity: 0;
+  }
+}
